@@ -24,3 +24,9 @@ function displayRepositories(){
     document.getElementById('repositories').innerHTML = repoList;
     
 }
+
+function getCommit(el)
+{
+  const username= 
+}
+}
