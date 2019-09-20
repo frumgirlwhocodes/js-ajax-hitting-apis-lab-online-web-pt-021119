@@ -28,6 +28,7 @@ function displayRepositories(){
 function getCommit(el)
 {
   const rname= el.dataset.repository;
-  const username= el.dataset.username
+  const username= el.dataset.username;  
+  const req = new XMLHttpRequest(); 
 }
 }
