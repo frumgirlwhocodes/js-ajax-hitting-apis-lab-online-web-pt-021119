@@ -32,7 +32,7 @@ function getCommit(el)
   const req = new XMLHttpRequest(); 
 req.addEventListener('load', displayCommits); 
 req.open('https://api.github.com/repos/' + username + name + '/commits')
-req.send()
+req.send();
 }
 
 function displayCommits(){
