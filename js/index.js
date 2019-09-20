@@ -1,6 +1,6 @@
 // your code here
 function getRepositories() {
-  const username= document.getElementByID('username').value
+  const username= document.getElementById('username').value
   const req = new XMLHttpRequest();
   req.addEventListener('load', showRepositories);
   console.log(`https://api.github.com/users/${username}/repos`)
@@ -21,6 +21,6 @@ function showRepositories(){
       )
     .join("")}</ul>`;
     
-    document.getElementByID('repositories').innerHTML = repoList;
+    document.getElementById('repositories').innerHTML = repoList;
     
 }
