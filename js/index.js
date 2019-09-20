@@ -1,2 +1,4 @@
 // your code here
-function getRepositories
+function getRepositories() {
+  let username= 
+}
