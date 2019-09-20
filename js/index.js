@@ -53,6 +53,6 @@ req.send();
     )
     .join('')}</ul>`;
     
-    document.getElementbyId('details').innerHTML = commitsList; 
+    document.getElementById('details').innerHTML = commitsList; 
 
 }
