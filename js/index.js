@@ -11,6 +11,8 @@ function getRepositories() {
 function showRepositories(){
   const repos = JSON.parse(this.responseText)
   cosole.log(repos); 
-  const repoList= `<ul>${repos.map((r) =>
+  const repoList= `<ul>${repos.map(r =>
+  
+  )
 
 }
