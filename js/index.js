@@ -9,6 +9,7 @@ function getRepositories() {
 
 
 function showRepositories(){
-  const repos = JSON.parse(this.responseText);
+  const repos = JSON.parse(this.responseText)
+  cosole.log(repos)
 
 }
