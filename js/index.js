@@ -1,4 +1,4 @@
 // your code here
 function getRepositories() {
-  const username= document.getElementByID
+  const username= document.getElementByID('username').value
 }
