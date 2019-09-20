@@ -11,10 +11,14 @@ function getRepositories() {
 function showRepositories(){
   const repos = JSON.parse(this.responseText)
   cosole.log(repos); 
-  const repoList= `<ul>${repos.map(r => `
-  )
-  }
-  
-  
-
+  const repoList= `<ul>${repos.map(r => '<li>' +
+       r.full_name + " - " + r.html_url + " - " + r.name +
+       ' - <a href="#" data-repo="' +
+       r.full_name + '" onclick="getCommits(this)">Get Commits</a></li>' +
+       ' - <a href="#" data-repo="' +
+       r.name + '" onclick="getBranches(this)">Get Branches</a></li>'
+      )
+    .join("")}</ul>`;
+    
+    
 }
