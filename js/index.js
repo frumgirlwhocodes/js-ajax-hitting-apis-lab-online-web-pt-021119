@@ -27,7 +27,7 @@ function displayRepositories(){
 
 function getCommit(el)
 {
-  const= rname= el.dataset.repository 
-  const username= 
+  const rname= el.dataset.repository;
+  const username= el.dataset.username
 }
 }
