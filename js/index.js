@@ -36,6 +36,23 @@ req.send();
 }
 
 function displayCommits(){
-  
+  function displayCommits() {
+	const commits = JSON.parse(this.responseText);
+	console.log(commits)
+  const commitsList = `<ul>${commits
+    .map(
+      commit =>
+        '<li><strong>' +
+        commit.commit.author.name +
+				'</strong> - ' +
+				'-' +
+				commit.author.login +
+				'-' +
+        commit.commit.message +
+        '</li>'
+    )
+    .join('')}</ul>`;
+    
+    document.getElementbyId()
 
 }
