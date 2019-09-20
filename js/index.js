@@ -9,6 +9,6 @@ function getRepositories() {
 
 
 function showRepositories(){
-  const repos = JSON.
+  const repos = JSON.parse 
 
 }
