@@ -20,6 +20,6 @@ function showRepositories(){
       )
     .join("")}</ul>`;
     
-    document.getElementByID('repositories')
+    document.getElementByID('repositories').innerHTML = repoList 
     
 }
