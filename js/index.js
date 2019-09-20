@@ -68,7 +68,7 @@ function  getBranches(el) {
 }
 
 function displayBranches(){
- const repos= Jason 
+ const branches= JSON.parse(this.responseText)
   
 }
 }
