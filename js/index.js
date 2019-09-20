@@ -35,7 +35,7 @@ req.open('https://api.github.com/repos/' + username + name + '/commits')
 req.send();
 }
 
-function displayCommits(){
+
   function displayCommits() {
 	const commits = JSON.parse(this.responseText);
 	console.log(commits)
@@ -53,6 +53,6 @@ function displayCommits(){
     )
     .join('')}</ul>`;
     
-    document.getElementbyId('details').innerHTML = commitsList 
+    document.getElementbyId('details').innerHTML = commitsList; 
 
 }
